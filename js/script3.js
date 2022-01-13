@@ -21,11 +21,29 @@ Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una list
 //         fakeInvites.push(fakePerson);
 //     }
 // }
-
+//! CICLO FOR
 const fakeInvites = [];
 const firstNames = ['nicolas', 'matteo', 'vasco', 'linda', 'adriana'];
 const lastNames = ['maranzano', 'imbimbo', 'rossi', 'bettini', 'arminio'];
 
+for (let i = 0; i < 3; i++) {
+    const randNum1 = Math.floor(Math.random() * firstNames.length);
+    const randNum2 = Math.floor(Math.random() * lastNames.length);
+
+    const name = firstNames[randNum1];
+    const lastName = lastNames[randNum2];
+
+    const fakePerson = `${name} ${lastName}`;
+    fakeInvites.push(fakePerson);
+}
+
+console.log(fakeInvites);
+
+
+
+
+// ! CICLO WHILE
+/*
 while (fakeInvites.length < 3) {
     const randNum1 = Math.floor(Math.random() * firstNames.length);
     const randNum2 = Math.floor(Math.random() * lastNames.length);
@@ -41,3 +59,4 @@ while (fakeInvites.length < 3) {
 }
 
 console.log(fakeInvites);
+*/
