@@ -17,6 +17,31 @@ for (let i = 0; i < 5; i++) {
 
 // ! CICLO WHILE 
 
+let sum = 0;
+let i = 1;
+
+while (i < 5) {
+    let userNumber = parseInt(prompt('Inserisci un numero'));
+    if (!isNaN(userNumber)) {
+        sum += userNumber;
+        console.log(sum);
+    }
+
+    i++;
+}
+
+// ! CICLO DO WHILE
+let sum = 0;
+let i = 1;
+
+do {
+    let userNumber = parseInt(prompt('Inserisci un numero'));
+    if (!isNaN(userNumber)) {
+        sum += userNumber;
+        console.log(sum);
+    }
+} while (i < 5);
+
 
 
 
