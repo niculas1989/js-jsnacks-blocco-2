@@ -4,7 +4,62 @@ console.log('JS OK');
 // Aggiungi elementi casuali all’array che ha meno elementi,
 // fino a quando ne avrà tanti quanti l’altro.
 
+//! CICLO WHILE
 
+const lenLista1 = Math.floor(Math.random() * 10);
+const lenLista2 = Math.floor(Math.random() * 10);
+
+const lista1 = [];
+const lista2 = [];
+
+let k = 0;
+
+while (lista1.length < lenLista1) {
+    let num = Math.floor(Math.random() * 100);
+    lista1.push(num);
+    k++;
+}
+
+while (lista2.length < lenLista2) {
+    let num = Math.floor(Math.random() * 100);
+    lista2.push(num);
+    k++;
+}
+
+console.log(lista1);
+console.log(lista2);
+
+const diff = lenLista1 - lenLista2;
+
+console.log(diff);
+
+if (diff < 0) {
+    console.log('lista 1 più piccola');
+
+    let limsup = Math.abs(diff);
+    for (let k = 0; k < limsup; k++) {
+        let num = Math.floor(Math.random() * 100);
+        lista1.push(num);
+    }
+
+
+} else if (diff > 0) {
+    console.log('lista 2 più piccola');
+
+    for (let k = 0; k < diff; k++) {
+        let num = Math.floor(Math.random() * 100);
+        lista2.push(num);
+    }
+
+} else {
+    console.log('lista 1 e 2 sono uguali');
+}
+
+console.log(lista1);
+console.log(lista2);
+
+//! CICLO FOR
+/*
 const lenLista1 = Math.floor(Math.random() * 10);
 const lenLista2 = Math.floor(Math.random() * 10);
 
@@ -52,4 +107,5 @@ if (diff < 0) {
 
 console.log(lista1);
 console.log(lista2);
+*/
 
