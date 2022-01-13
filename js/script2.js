@@ -12,13 +12,3 @@ if (userNumber % 2 != 0) {
 } else {
     console.log(userNumber);
 }
-
-// if (userNumber % 2) {
-//     console.log('Il tuo numero è pari');
-//     const numberEven = userNumber + 2;
-//     console.log(`Il prossimo numero pari è ${numberEven}`);
-// } else {
-//     alert('Inserisci un altro numero');
-//     let userNumber = parseInt(prompt('Inserisci un numero'));
-//     console.log(userNumber);
-// }
