@@ -4,14 +4,21 @@ console.log('JS OK');
 Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo
 */
 
-const userNumber = parseInt(prompt('Inserisci un numero'));
+let userNumber = parseInt(prompt('Inserisci un numero'));
 
-
-
-if (userNumber % 2 === 0) {
-    console.log('Il tuo numero è pari');
-    const numberEven = userNumber + 2;
-    console.log(`Il prossimo numero pari è ${numberEven}`);
+if (userNumber % 2 != 0) {
+    const numberEven = userNumber + 1;
+    console.log(numberEven);
 } else {
-    alert('Inserisci un altro numero');
+    console.log(userNumber);
 }
+
+// if (userNumber % 2) {
+//     console.log('Il tuo numero è pari');
+//     const numberEven = userNumber + 2;
+//     console.log(`Il prossimo numero pari è ${numberEven}`);
+// } else {
+//     alert('Inserisci un altro numero');
+//     let userNumber = parseInt(prompt('Inserisci un numero'));
+//     console.log(userNumber);
+// }
