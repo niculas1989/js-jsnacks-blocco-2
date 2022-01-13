@@ -11,36 +11,37 @@ for (let i = 0; i < 5; i++) {
     let userNumber = parseInt(prompt('Inserisci un numero'));
     if (!isNaN(userNumber)) {
         sum += userNumber;
-        console.log(sum);
     }
 }
+console.log(sum);
 
-// ! CICLO WHILE 
+// // ! CICLO WHILE 
 
-let sum = 0;
-let i = 1;
+// let sum = 0;
+// let i = 0;
 
-while (i < 5) {
-    let userNumber = parseInt(prompt('Inserisci un numero'));
-    if (!isNaN(userNumber)) {
-        sum += userNumber;
-        console.log(sum);
-    }
+// while (i < 5) {
+//     let userNumber = parseInt(prompt('Inserisci un numero'));
+//     if (!isNaN(userNumber)) {
+//         sum += userNumber;
+//     }
 
-    i++;
-}
+//     i++;
+// }
+// console.log(sum);
 
 // ! CICLO DO WHILE
-let sum = 0;
-let i = 1;
+// let sum = 0;
+// let i = 0;
 
-do {
-    let userNumber = parseInt(prompt('Inserisci un numero'));
-    if (!isNaN(userNumber)) {
-        sum += userNumber;
-        console.log(sum);
-    }
-} while (i < 5);
+// do {
+//     let userNumber = parseInt(prompt('Inserisci un numero'));
+//     if (!isNaN(userNumber)) {
+//         sum += userNumber;
+//     }
+//     i++
+// } while (i < 5);
+// console.log(sum);
 
 
 
